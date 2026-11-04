@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #f5f5f5; color: #333; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+    .card { max-width: 640px; width: 100%; background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 40px 48px; }
+    h1 { font-size: 20px; font-weight: 600; color: #111; margin-bottom: 14px; }
+    p  { font-size: 14px; color: #555; line-height: 1.7; margin-bottom: 12px; }
+    .note { font-size: 12px; color: #999; border-top: 1px solid #eee; padding-top: 14px; margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Subdomain Takeover &mdash; Proof of Concept</h1>
+    <p>This page demonstrates that your domain is vulnerable to subdomain takeover.</p>
+    <p>The DNS CNAME record for this subdomain points to an unclaimed application, allowing any registered user to serve arbitrary content under this trusted domain.</p>
+    <p class="note">Reported by @gdattacker &middot; Responsible disclosure only &middot; No data was accessed</p>
+  </div>
+</body>
+</html>
